@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* NAV */
+.nav-link {
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: white;
+}
+
+/* SECCIONES */
+.section {
+  padding: 6rem 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section-text {
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+/* CARDS */
+.card {
+  background: #1f2933;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* FORM */
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  background: #1f2933;
+  border-radius: 0.5rem;
+  color: white;
+  outline: none;
+}
+
+.btn-primary {
+  background: white;
+  color: black;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+/* SKETCHFAB */
+.sketchfab-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* PARALLAX */
+.parallax {
+  position: relative;
+  background: black;
+}
+
+.parallax-layer {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+/* FONDO GIF */
+.layer-back {
+  background-image: url("fondo_principal.gif");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+}
+
+/* CAPA MEDIA */
+.layer-mid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.08;
+}
